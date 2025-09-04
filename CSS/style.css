@@ -1,0 +1,130 @@
+html {
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+
+
+#central-left-section {
+    transform: translateY(2rem);
+    width: 40%;
+    height: 80%;
+    background-image: url('../assets/left-background.jpg');
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
+    border-top-left-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10rem;
+    position: relative;
+}
+#left-section-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 80%;
+    align-self: center;
+}
+#left-section-text h1 {
+    font-size: 3.5rem;
+    color: white;
+    width: 60%;
+}
+#left-section-text h1 span{
+    color: rgb(57, 209, 184);
+}
+
+#left-section-text p {
+    font-size: 1.8rem;
+    color: rgb(218, 218, 218);
+    width: 90%;
+}
+#sign-up-with {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    gap: 0.5rem;
+    align-self: flex-end;
+    width: 20%;
+}
+.green-line {
+    background-color: rgb(57, 209, 184);
+    width: 100%;
+    height: 1.5%;
+}
+#green-line-left {
+    position: absolute;
+    bottom: 0;
+}
+#green-line-right {
+    position: absolute;
+    top: 0;
+}
+
+
+#central-right-section {
+    transform: translateY(-2rem);
+    background-color: white;
+    width: 40%;
+    height: 80%;
+    border-bottom-right-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#form-section h2 {
+    font-size: 2rem;
+}
+#form-section p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+#form-section p a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(37, 211, 255);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.input-section {
+    border-bottom: 0.15rem solid rgb(218, 218, 218);
+    color: rgb(128, 128, 128);
+}
+form div input {
+    font-size: 1rem;
+    border: none;
+}
+form div input::placeholder {
+    color: rgb(128, 128, 128);
+}
+#signup-button {
+    width: 15rem;
+}

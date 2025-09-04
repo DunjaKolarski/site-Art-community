@@ -10,21 +10,22 @@
 <body>
     <div id="page">
         <div id="central-left-section">
-            <div>
-                <h1>JOIN THE LARGEST ART<span>COMMUNITY IN THE WORLD</span></h1>
+            <div id="left-section-text">
+                <h1>JOIN THE LARGEST ART<span> COMMUNITY IN THE WORLD</span></h1>
                 <p>Explore and discover art, become a better artist, connect with others over mutual hobbies, or buy and sell work you can do it all here.</p>
             </div>
-            <div>
+            <div id="sign-up-with">
                 <p>SIGN UP WITH</p>
                 <a href="#"><i class="bi bi-facebook"></i></a>
                 <a href="#"><i class="bi bi-google"></i></a>
             </div>
+            <div class="green-line" id="green-line-left"></div>
         </div>
         <div id="central-right-section">
             <div id="form-section">
-                <h3>Sign Up</h3>
+                <h2>Sign Up</h2>
                 <p>New? <a href="#">Create an account</a></p>
-                <form action="">
+                <form action="sign.php" method="POST">
                     <div class="input-section">
                         <i class="bi bi-person"></i>
                         <input type="text" placeholder="Name" required>
@@ -50,9 +51,10 @@
                         <label for="keep-logged-in">Keep me Logged In</label>
                     </div>
                     
-                    <button type="submit" class="signup-button">SIGN UP</button>
+                    <button type="submit" id="signup-button">SIGN UP</button>
                 </form>
             </div>
+            <div class="green-line" id="green-line-right"></div>
         </div>
     </div>
 </body>
