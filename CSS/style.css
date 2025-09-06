@@ -183,6 +183,7 @@ form div input:focus {
 #signup-button {
     width: 10rem;
     padding: 1.5rem;
+    font-size: 1rem;
     background-color: rgb(57, 209, 184);
     color: black;
     font-weight: bold;
@@ -191,4 +192,82 @@ form div input:focus {
     border-top-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 3rem;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 8px;
+    }
+    #central-left-section {
+        height: 50%;
+        width: 45%;
+    }
+    #left-section-text {
+        margin-top: 20rem;
+    }
+    #central-right-section {
+        height: 50%;
+        width: 45%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 6px;
+    }
+    #page {
+        flex-direction: column;
+    }
+    #central-left-section {
+        height: 40%;
+        width: 60%;
+    }
+    #left-section-text {
+        margin-top: 12rem;
+    }
+    #sign-up-with {
+        width: 40%;
+    }
+    #central-right-section {
+        height: 40%;
+        width: 60%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    html {
+        font-size: 6px;
+    }
+    #central-left-section {
+        height: 70%;
+        width: 40%;
+    }
+    #left-section-text {
+        margin-top: 10rem;
+    }
+    #central-right-section {
+        height: 70%;
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    #page {
+        flex-direction: row;
+    }
+    #central-left-section {
+        height: 70%;
+        width: 40%;
+    }
+    #sign-up-with {
+        width: 30%;
+    }
+    #central-right-section {
+        height: 70%;
+        width: 40%;
+    }
 }
