@@ -21,9 +21,9 @@ html {
 
 
 #central-left-section {
-    transform: translateY(2rem);
+    transform: translateY(1.5rem);
     width: 40%;
-    height: 80%;
+    height: 70%;
     background-image: url('../assets/left-background.jpg');
     background-size: cover;        
     background-position: center;   
@@ -31,8 +31,7 @@ html {
     border-top-left-radius: 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10rem;
+    justify-content: space-between;
     position: relative;
 }
 #left-section-text {
@@ -41,28 +40,50 @@ html {
     gap: 3rem;
     width: 80%;
     align-self: center;
+    margin-top: 15rem;
 }
 #left-section-text h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: white;
     width: 60%;
 }
-#left-section-text h1 span{
+#left-section-text h1 span {
     color: rgb(57, 209, 184);
 }
 
 #left-section-text p {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: rgb(218, 218, 218);
-    width: 90%;
+    width: 70%;
 }
 #sign-up-with {
     color: white;
     font-weight: bold;
     display: flex;
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     align-self: flex-end;
-    width: 20%;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    width: 30%;
+}
+#sign-up-with p {
+    font-size: 0.8rem;
+}
+#sign-up-with div {
+    display: flex;
+    gap: 0.2rem;
+}
+#sign-up-with div a {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 0.7rem;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
 }
 .green-line {
     background-color: rgb(57, 209, 184);
@@ -80,10 +101,10 @@ html {
 
 
 #central-right-section {
-    transform: translateY(-2rem);
+    transform: translateY(-1.5rem);
     background-color: white;
     width: 40%;
-    height: 80%;
+    height: 70%;
     border-bottom-right-radius: 5rem;
     display: flex;
     justify-content: center;
@@ -106,17 +127,18 @@ html {
 #form-section p a {
     font-size: 0.8rem;
     text-decoration: none;
-    font-weight: bold;
     color: rgb(37, 211, 255);
 }
 form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
+    margin-top: 2rem;
 }
 .input-section {
     border-bottom: 0.15rem solid rgb(218, 218, 218);
     color: rgb(128, 128, 128);
+    padding-bottom: 0.8rem;
 }
 form div input {
     font-size: 1rem;
@@ -125,6 +147,48 @@ form div input {
 form div input::placeholder {
     color: rgb(128, 128, 128);
 }
+form div input:focus {
+    outline: none;
+}
+.checkbox-section input[type="checkbox"] {
+    display: none;
+}
+.checkbox-section label {
+    font-weight: bold;
+    color: black;
+    position: relative;
+    padding-left: 3rem; 
+}
+.checkbox-section label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgb(57, 209, 184);
+}
+.checkbox-section input[type="checkbox"]:checked + label::after {
+    content: "X";
+    position: absolute;
+    left: 0.55rem;
+    top: 50%;
+    transform: translateY(-55%);
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+}
 #signup-button {
-    width: 15rem;
+    width: 10rem;
+    padding: 1.5rem;
+    background-color: rgb(57, 209, 184);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 3rem;
 }
